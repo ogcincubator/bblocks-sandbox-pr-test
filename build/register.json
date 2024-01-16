@@ -27,37 +27,37 @@
         "templates"
       ],
       "shaclRules": {},
-      "ldContext": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/build/annotated/bbr/template/my-building-block/context.jsonld",
+      "ldContext": "https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/context.jsonld",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/build/annotated/bbr/template/my-building-block/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/build/annotated/bbr/template/my-building-block/schema.json"
+        "application/yaml": "https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/schema.yaml",
+        "application/json": "https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/schema.json"
       },
-      "sourceLdContext": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/_sources/my-building-block/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/_sources/my-building-block/",
+      "sourceLdContext": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/context.jsonld",
+      "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/build/generateddocs/json-full/bbr/template/my-building-block/index.json"
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/bbr/template/my-building-block/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/build/generateddocs/markdown/bbr/template/my-building-block/index.md"
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/build/generateddocs/slate-build/bbr/template/my-building-block/"
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/bblock/ogc.bbr.template.my-building-block"
+          "url": "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block"
         }
       }
     }
   ],
-  "baseURL": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/",
-  "viewerURL": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/",
-  "validationReport": "https://raw.githubusercontent.com/avillar/bblocks-sandbox/master/build/tests/report.html",
+  "baseURL": "https://avillar.github.io/bblocks-sandbox/",
+  "viewerURL": "https://avillar.github.io/bblocks-sandbox/",
+  "validationReport": "https://avillar.github.io/bblocks-sandbox/build/tests/report.html",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
   "name": "My OGC Building Blocks repository"
