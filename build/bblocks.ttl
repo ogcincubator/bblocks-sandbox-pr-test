@@ -11,14 +11,14 @@ bblocks:ogc.bbr.template.my-building-block a skos:Concept,
     rdfs:label "My Building Block" ;
     dct:abstract "This Building Block serves as a template to create new ones" ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -35,8 +35,8 @@ bblocks:ogc.bbr.template.my-building-block a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-01-16T09:30:26.959360"^^xsd:dateTime ;
-    prov:startedAtTime "2024-01-16T09:30:26.894609"^^xsd:dateTime ;
+    prov:endedAtTime "2024-01-16T10:27:58.214097"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-16T10:27:58.152294"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
