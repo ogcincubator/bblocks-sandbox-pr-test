@@ -3,6 +3,10 @@
 Lorem markdownum vestigia sanguine rursus undis, suspenderat meo mox conlegerat
 temperat sucos. Est graves dant sentire sanguinis flores respondent testari.
 
+** This is a relative URL: [example.png](assets/example.png) **.
+
+![Image](assets/example.png)
+
 > Videri vias quid Ausoniae sua flores ante, reminiscitur fuit est. Semel
 > [hectora](http://silvaque.org/) peregrinaeque rudem exercent in, Troiana si
 > Asida instabilesque somno sed.

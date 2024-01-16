@@ -3,10 +3,18 @@
     This is the content of the example.
     
     In **Markdown** format.
+    
+    ** This is a relative URL: [example.png](assets/example.png) **.
+
+    ![Image](assets/example.png)
 
 - title: Examples can have content and/or code snippets.
   content: |-
     The content of this example. 
+    
+    ** This is a relative URL: [example.png](assets/example.png) **.
+
+    ![Image](assets/example.png)
 
   snippets:
     - language: shell
