@@ -1,0 +1,4 @@
+{
+  "a": "http://www.google.es",
+  "@context": "https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/context.jsonld"
+}

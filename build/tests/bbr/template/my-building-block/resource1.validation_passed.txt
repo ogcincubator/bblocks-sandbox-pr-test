@@ -1,0 +1,13 @@
+Validation report for ogc.bbr.template.my-building-block - My Building Block
+Generated 2024-01-22T13:58:11.375480+00:00
+=== Files ===
+Using resource1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD resource1.jsonld created
+Output Turtle resource1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

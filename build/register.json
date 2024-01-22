@@ -1,6 +1,6 @@
 {
   "imports": [
-    "https://blocks.ogc.org/register.json"
+    "https://opengeospatial.github.io/bblocks/register.json"
   ],
   "bblocks": [
     {
@@ -35,6 +35,7 @@
       "sourceLdContext": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/context.jsonld",
       "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/avillar/bblocks-sandbox/blob/master/build/tests/bbr/template/my-building-block/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",

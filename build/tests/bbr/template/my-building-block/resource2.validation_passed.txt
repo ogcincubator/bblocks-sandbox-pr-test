@@ -1,0 +1,28 @@
+Validation report for ogc.bbr.template.my-building-block - My Building Block
+Generated 2024-01-22T13:58:11.526927+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using resource2.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD resource2.jsonld created
+Output Turtle resource2.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 123 is not of type 'string'
+
+Failed validating 'type' in schema['properties']['a']:
+    {'format': 'uri',
+     'type': 'string',
+     'x-jsonld-id': 'https://example.org/my-bb-model/a',
+     'x-jsonld-type': '@id'}
+
+On instance['a']:
+    123
+=== End JSON Schema ===
+

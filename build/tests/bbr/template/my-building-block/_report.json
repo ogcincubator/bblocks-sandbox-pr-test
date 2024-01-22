@@ -2,13 +2,403 @@
   "title": "Validation report for ogc.bbr.template.my-building-block - My Building Block",
   "bblockName": "My Building Block",
   "bblockId": "ogc.bbr.template.my-building-block",
-  "generated": "2024-01-16T10:27:58.139414+00:00",
+  "generated": "2024-01-22T13:58:11.955834+00:00",
   "result": true,
-  "items": [],
+  "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": false,
+        "filename": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/resource1.json",
+        "language": "json",
+        "sourceUrl": "https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource1.json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using resource1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "resource1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD resource1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "resource1.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle resource1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/resource2.json",
+        "language": "json",
+        "sourceUrl": "https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource2.json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using resource2.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "resource2.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD resource2.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "resource2.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle resource2.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "123 is not of type 'string'",
+              "isError": true,
+              "message": "ValidationError: 123 is not of type 'string'\n\nFailed validating 'type' in schema['properties']['a']:\n    {'format': 'uri',\n     'type': 'string',\n     'x-jsonld-id': 'https://example.org/my-bb-model/a',\n     'x-jsonld-type': '@id'}\n\nOn instance['a']:\n    123"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/resource3.json",
+        "language": "json",
+        "sourceUrl": "https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource3.json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using resource3.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "resource3.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD resource3.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "resource3.ttl",
+              "size": 1,
+              "isError": false,
+              "message": "Output Turtle resource3.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'b' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'b' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'a': 'http://www.google.es'}"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/resource4.json",
+        "language": "json",
+        "sourceUrl": "https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource4.json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": []
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "exception": "JSONDecodeError",
+              "line": 2,
+              "col": 3,
+              "isError": true,
+              "message": "Error parsing JSON example: Expecting property name enclosed in double quotes: line 2 column 3 (char 4) on or near line 2 column 3"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": false,
+        "filename": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/one-again.json",
+        "language": "json",
+        "sourceUrl": "https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource1.json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using one-again.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "one-again.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD one-again.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "one-again.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle one-again.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    }
+  ],
   "globalErrors": {},
   "counts": {
-    "total": 0,
-    "passed": 0,
+    "total": 5,
+    "passed": 5,
     "failed": 0
   }
 }

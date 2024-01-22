@@ -26,7 +26,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-01-16T10:27:58.151959+00:00</small>
+            <small class="datetime">Generated at 2024-01-22T13:58:11.968936+00:00</small>
                 <p class="summary fw-semibold text-success">
                     Number of passing building blocks: 1 / 1 (100%)
                 </p>
@@ -45,13 +45,188 @@
 
                                     <span class="badge text-bg-success me-2">
                                             Passed
-                                            (100%)
+                                            (100% passed)
                                     </span>
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse " id="bblock-collapse-0">
                                 <div class="accordion-body">
-                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 5 / 5
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-1"
+                                                            aria-expanded="false" aria-controls="uid-1"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/resource1.json" target="_blank">resource1.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-1">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using resource1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD resource1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle resource1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
+                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/resource2.json" target="_blank">resource2.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using resource2.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD resource2.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle resource2.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: 123 is not of type &#x27;string&#x27;
+
+Failed validating &#x27;type&#x27; in schema[&#x27;properties&#x27;][&#x27;a&#x27;]:
+    {&#x27;format&#x27;: &#x27;uri&#x27;,
+     &#x27;type&#x27;: &#x27;string&#x27;,
+     &#x27;x-jsonld-id&#x27;: &#x27;https://example.org/my-bb-model/a&#x27;,
+     &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;}
+
+On instance[&#x27;a&#x27;]:
+    123</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
+                                                            aria-expanded="false" aria-controls="uid-3"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/resource3.json" target="_blank">resource3.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using resource3.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD resource3.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle resource3.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;b&#x27; is a required property
+
+Failed validating &#x27;required&#x27; in schema:
+    {&#x27;$schema&#x27;: &#x27;https://json-schema.org/draft/2020-12/schema&#x27;,
+     &#x27;description&#x27;: &#x27;Schema for my building block&#x27;,
+     &#x27;properties&#x27;: {&#x27;a&#x27;: {&#x27;format&#x27;: &#x27;uri&#x27;,
+                          &#x27;type&#x27;: &#x27;string&#x27;,
+                          &#x27;x-jsonld-id&#x27;: &#x27;https://example.org/my-bb-model/a&#x27;,
+                          &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
+                    &#x27;b&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;,
+                          &#x27;x-jsonld-id&#x27;: &#x27;https://example.org/my-bb-model/b&#x27;}},
+     &#x27;required&#x27;: [&#x27;a&#x27;, &#x27;b&#x27;],
+     &#x27;type&#x27;: &#x27;object&#x27;}
+
+On instance:
+    {&#x27;a&#x27;: &#x27;http://www.google.es&#x27;}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
+                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/resource4.json" target="_blank">resource4.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">Error parsing JSON example: Expecting property name enclosed in double quotes: line 2 column 3 (char 4) on or near line 2 column 3</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
+                                                            aria-expanded="false" aria-controls="uid-5"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/tests/one-again.json" target="_blank">one-again.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using one-again.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD one-again.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle one-again.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>

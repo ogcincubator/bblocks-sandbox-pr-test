@@ -1,4 +1,5 @@
 @prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -6,37 +7,50 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-bblocks:ogc.bbr.template.my-building-block a skos:Concept,
+<https://avillar.github.io/ogc.bbr.template.my-building-block> a skos:Concept,
+        dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "My Building Block" ;
     dct:abstract "This Building Block serves as a template to create new ones" ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
-    skos:inScheme <https://www.opengis.net/def/bblocks> ;
+    skos:inScheme <https://avillar.github.io/bblocks-sandbox/> ;
+    dcat:keyword "templates" ;
     bblocks:hasJsonLdContext <https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/context.jsonld> ;
     bblocks:hasSchema <https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/schema.json>,
         <https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
+<https://avillar.github.io/bblocks-sandbox/> a skos:ConceptScheme,
+        dcat:Catalog ;
+    rdfs:label "My OGC Building Blocks repository" ;
+    dct:abstract """This is an example text for the abstract. It should be short and to the point.
+A "Tell me more" link will appear if there is an additional description with a longer explanation.
+""" ;
+    dct:description """The description can be longer. Both **the abstract** *and the description* support Markdown,
+including [links](https://google.es).
+""" ;
+    skos:prefLabel "My OGC Building Blocks repository" ;
+    bblocks:hasValidationReport <https://avillar.github.io/bblocks-sandbox/build/tests/report.html> ;
+    bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
+
 <https://example.com/sources/1> rdfs:label "Sample source document" .
 
-<https://www.opengis.net/def/bblocks> a skos:ConceptScheme ;
-    skos:prefLabel "OGC Building Blocks Register" .
-
 [] a prov:Activity ;
-    prov:endedAtTime "2024-01-16T10:27:58.214097"^^xsd:dateTime ;
-    prov:startedAtTime "2024-01-16T10:27:58.152294"^^xsd:dateTime ;
+    prov:endedAtTime "2024-01-22T13:58:12.033041"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-22T13:58:11.969392"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
