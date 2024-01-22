@@ -1,0 +1,11 @@
+# Extra tests
+
+- ref: https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource1.json
+- ref: https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource2.json
+  require-fail: true
+- ref: https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource3.json
+  require-fail: true
+- ref: https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource4.json
+  require-fail: true
+- ref: https://gist.github.com/avillar/4a06ed5c88e8cb4662873a805ae10e33/raw/8eb0510d1121371940d860846448833706050533/resource1.json
+  output-filename: one-again.json
