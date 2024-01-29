@@ -2,11 +2,12 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
+  "modified": "2024-01-29T17:41:47.045397",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"e58076a8273c5138f354282957e1d3aebdd678fb",
-      "shortCommitId": "\"e58076",
-      "date": "2024-01-26T12:35:18+00:00\""
+      "commitId": "\"6f1422bff02abb7dc81d6726f940958d6aa51682",
+      "shortCommitId": "\"6f1422",
+      "date": "2024-01-29T17:40:23+00:00\""
     }
   },
   "baseURL": "https://avillar.github.io/bblocks-sandbox/",

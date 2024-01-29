@@ -16,11 +16,11 @@
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block" ] ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -49,14 +49,14 @@ including [links](https://google.es).
 <https://example.com/sources/1> rdfs:label "Sample source document" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-01-29T10:57:10.550641"^^xsd:dateTime ;
-    prov:startedAtTime "2024-01-29T10:57:10.488010"^^xsd:dateTime ;
+    prov:endedAtTime "2024-01-29T17:41:48.723358"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-29T17:41:48.661883"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            rdfs:seeAlso <https://avillar.github.io/bblocks-sandbox/build/register.json> ] ;
+            rdfs:seeAlso <https://avillar.github.io/bblocks-sandbox/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

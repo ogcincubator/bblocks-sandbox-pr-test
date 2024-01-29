@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.template.my-building-block - My Building Block
-Generated 2024-01-29T10:57:10.144945+00:00
+Generated 2024-01-29T17:41:48.210676+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
