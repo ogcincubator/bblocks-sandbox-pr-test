@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.template.my-building-block - My Building Block
-Generated 2024-01-29T17:41:48.647998+00:00
+Generated 2024-01-29T18:31:14.026948+00:00
 === Files ===
 Using one-again.json from examples
 JSON-LD context is present - uplifting

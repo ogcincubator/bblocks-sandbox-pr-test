@@ -16,13 +16,13 @@
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block" ],
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ] ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2023-04-05"^^xsd:date ;
+    dct:modified "2024-01-29"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://avillar.github.io/bblocks-sandbox/> ;
     dcat:keyword "templates" ;
@@ -49,10 +49,11 @@ including [links](https://google.es).
 <https://example.com/sources/1> rdfs:label "Sample source document" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-01-29T17:41:48.723358"^^xsd:dateTime ;
-    prov:startedAtTime "2024-01-29T17:41:48.661883"^^xsd:dateTime ;
+    prov:endedAtTime "2024-01-29T18:31:14.102507"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-29T18:31:14.040735"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
+            dct:hasVersion "git:47eaca9d27a9fbaa6a6e0113234409bdc4b2efbd" ;
             rdfs:seeAlso <https://avillar.github.io/bblocks-sandbox/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;

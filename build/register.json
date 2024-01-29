@@ -2,14 +2,16 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-01-29T17:41:47.045397",
+  "modified": "2024-01-29T18:31:12.938575",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"6f1422bff02abb7dc81d6726f940958d6aa51682",
-      "shortCommitId": "\"6f1422",
-      "date": "2024-01-29T17:40:23+00:00\""
+      "commitId": "\"d0c27618159fefb1cffad6f996b2780fdfd81c71",
+      "shortCommitId": "\"d0c276",
+      "date": "2024-01-29T18:17:00+00:00\""
     }
   },
+  "gitRepository": "https://github.com/avillar/bblocks-sandbox",
+  "gitHubRepository": "https://github.com/avillar/bblocks-sandbox/blob/master/",
   "baseURL": "https://avillar.github.io/bblocks-sandbox/",
   "viewerURL": "https://avillar.github.io/bblocks-sandbox/",
   "validationReport": "https://avillar.github.io/bblocks-sandbox/build/tests/report.html",
@@ -27,7 +29,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-04-05",
+      "dateOfLastChange": "2024-01-29",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
