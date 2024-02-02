@@ -30,6 +30,7 @@
     "application/json": "https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/schema.json"
   },
   "sourceLdContext": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/context.jsonld",
+  "sourceSchema": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/schema.yaml",
   "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/",
   "validationPassed": true,
   "testOutputs": "https://github.com/avillar/bblocks-sandbox/blob/master/build/tests/bbr/template/my-building-block/",

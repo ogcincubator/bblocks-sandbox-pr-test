@@ -13,12 +13,12 @@
     rdfs:label "My Building Block" ;
     dct:abstract "This Building Block serves as a template to create new ones" ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block" ] ;
     dct:hasVersion "0.1" ;
@@ -49,18 +49,18 @@ including [links](https://google.es).
 <https://example.com/sources/1> rdfs:label "Sample source document" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-01-29T18:31:14.102507"^^xsd:dateTime ;
-    prov:startedAtTime "2024-01-29T18:31:14.040735"^^xsd:dateTime ;
+    prov:endedAtTime "2024-02-02T10:50:24.650008"^^xsd:dateTime ;
+    prov:startedAtTime "2024-02-02T10:50:24.587629"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:47eaca9d27a9fbaa6a6e0113234409bdc4b2efbd" ;
-            rdfs:seeAlso <https://avillar.github.io/bblocks-sandbox/build/register.json> ],
-        [ a prov:Entity ;
             dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+        [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:78bb5e245203bb9b7681935ab1c864b1c3c37bbe" ;
+            rdfs:seeAlso <https://avillar.github.io/bblocks-sandbox/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.33" ;
+            dct:hasVersion "0.3.35" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 
