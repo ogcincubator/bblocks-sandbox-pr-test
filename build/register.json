@@ -2,12 +2,12 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-02-02T10:50:22.615882",
+  "modified": "2024-02-28T09:46:26.393457",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"d3ca95c6a06a13ca49593aac13774e5db6835687",
-      "shortCommitId": "\"d3ca95",
-      "date": "2024-02-02T10:25:57+00:00\""
+      "commitId": "\"3ab474f97c60e5422b1204350317b546bf781d3d",
+      "shortCommitId": "\"3ab474",
+      "date": "2024-02-28T09:41:23+00:00\""
     }
   },
   "gitRepository": "https://github.com/avillar/bblocks-sandbox",
@@ -20,8 +20,7 @@
   ],
   "bblocks": [
     {
-      "itemIdentifier": "ogc.bbr.template.my-building-block",
-      "$schema": "metaschema.yaml",
+      "itemIdentifier": "avillar.sandbox.my-building-block",
       "name": "My Building Block",
       "abstract": "This Building Block serves as a template to create new ones",
       "status": "under-development",
@@ -29,7 +28,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-01-29",
+      "dateOfLastChange": "2024-02-28",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -42,33 +41,37 @@
       "tags": [
         "templates"
       ],
+      "conformanceClasses": [
+        "http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/historical-location",
+        "http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/thing"
+      ],
       "shaclRules": {},
-      "ldContext": "https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/context.jsonld",
+      "ldContext": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld",
       "schema": {
-        "application/yaml": "https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/schema.yaml",
-        "application/json": "https://avillar.github.io/bblocks-sandbox/build/annotated/bbr/template/my-building-block/schema.json"
+        "application/yaml": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml",
+        "application/json": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.json"
       },
       "sourceLdContext": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/context.jsonld",
       "sourceSchema": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/schema.yaml",
       "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/avillar/bblocks-sandbox/blob/master/build/tests/bbr/template/my-building-block/",
+      "testOutputs": "https://github.com/avillar/bblocks-sandbox/blob/master/build/tests/sandbox/my-building-block/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/bbr/template/my-building-block/index.md"
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/my-building-block/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/bbr/template/my-building-block/index.json"
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/my-building-block/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/bbr/template/my-building-block/"
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/sandbox/my-building-block/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://avillar.github.io/bblocks-sandbox/bblock/ogc.bbr.template.my-building-block"
+          "url": "https://avillar.github.io/bblocks-sandbox/bblock/avillar.sandbox.my-building-block"
         }
       }
     }
