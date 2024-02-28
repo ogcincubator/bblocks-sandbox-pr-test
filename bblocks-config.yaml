@@ -7,7 +7,7 @@ description: |
   The description can be longer. Both **the abstract** *and the description* support Markdown,
   including [links](https://google.es).
 
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: avillar.sandbox.
 
 imports:
   - default

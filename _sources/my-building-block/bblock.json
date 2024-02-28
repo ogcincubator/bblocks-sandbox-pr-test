@@ -1,5 +1,4 @@
 {
-  "$schema": "metaschema.yaml",
   "name": "My Building Block",
   "abstract": "This Building Block serves as a template to create new ones",
   "status": "under-development",
@@ -17,5 +16,9 @@
   ],
   "maturity": "mature",
   "scope": "unstable",
-  "tags": ["templates"]
+  "tags": ["templates"],
+  "conformanceClasses": [
+    "http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/historical-location",
+    "http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/thing"
+  ]
 }
