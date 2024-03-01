@@ -12,6 +12,8 @@ properties:
     type: number
   c:
     $ref: bblocks://avillar.sandbox.my-building-block#/definitions/test
+  d:
+    $ref: bblocks://avillar.sandbox.enumerations.legalStatus
 required:
   - a
   - b
