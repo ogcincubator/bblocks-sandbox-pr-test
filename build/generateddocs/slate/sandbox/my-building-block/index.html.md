@@ -113,6 +113,8 @@ properties:
     x-jsonld-id: https://example.org/my-bb-model/b
   c:
     $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test
+  d:
+    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml
 required:
 - a
 - b

@@ -20,6 +20,9 @@
     },
     "c": {
       "$ref": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.json#/definitions/test"
+    },
+    "d": {
+      "$ref": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.json"
     }
   },
   "required": [

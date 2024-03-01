@@ -16,6 +16,8 @@ x-defs:
         x-jsonld-id: https://example.org/my-bb-model/b
       c:
         $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema-oas3.0.yaml#/x-defs/avillar.github.io_bblocks-sandbox_build_annotated_sandbox_my-building-block_schema.yaml/definitions/test
+      d:
+        $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema-oas3.0.yaml#/x-defs/avillar.github.io_bblocks-sandbox_build_annotated_sandbox_enumerations_legalStatus_schema.yaml
     required:
     - a
     - b
@@ -38,10 +40,18 @@ x-defs:
         x-jsonld-id: https://example.org/my-bb-model/b
       c:
         $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema-oas3.0.yaml#/x-defs/avillar.github.io_bblocks-sandbox_build_annotated_sandbox_my-building-block_schema.yaml/definitions/test
+      d:
+        $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema-oas3.0.yaml#/x-defs/avillar.github.io_bblocks-sandbox_build_annotated_sandbox_enumerations_legalStatus_schema.yaml
     required:
     - a
     - b
     x-schema-version: https://json-schema.org/draft/2020-12/schema
     x-schema-source: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml
+  avillar.github.io_bblocks-sandbox_build_annotated_sandbox_enumerations_legalStatus_schema.yaml:
+    type: string
+    enum:
+    - agreed
+    - notAgreed
+    x-schema-source: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml
 allOf:
 - $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema-oas3.0.yaml#/x-defs/avillar.sandbox.my-building-block

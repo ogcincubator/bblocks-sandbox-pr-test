@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-02-28",
+  "dateOfLastChange": "2024-03-01",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -27,6 +27,9 @@
     "http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/thing"
   ],
   "shaclRules": {},
+  "dependsOn": [
+    "avillar.sandbox.enumerations.legalStatus"
+  ],
   "ldContext": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld",
   "schema": {
     "application/yaml": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml",
@@ -62,7 +65,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for my building block\ntype: object\ndefinitions:\n  test:\n    type: string\nproperties:\n  a:\n    type: string\n    format: uri\n    x-jsonld-id: https://example.org/my-bb-model/a\n    x-jsonld-type: '@id'\n  b:\n    type: number\n    x-jsonld-id: https://example.org/my-bb-model/b\n  c:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test\nrequired:\n- a\n- b\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for my building block\ntype: object\ndefinitions:\n  test:\n    type: string\nproperties:\n  a:\n    type: string\n    format: uri\n    x-jsonld-id: https://example.org/my-bb-model/a\n    x-jsonld-type: '@id'\n  b:\n    type: number\n    x-jsonld-id: https://example.org/my-bb-model/b\n  c:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test\n  d:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml\nrequired:\n- a\n- b\n",
   "gitRepository": "https://github.com/avillar/bblocks-sandbox",
   "gitPath": "_sources/my-building-block"
 }

@@ -2,7 +2,7 @@
   "title": "Validation report for avillar.sandbox.my-building-block - My Building Block",
   "bblockName": "My Building Block",
   "bblockId": "avillar.sandbox.my-building-block",
-  "generated": "2024-02-28T09:46:27.764438+00:00",
+  "generated": "2024-03-01T10:21:15.564778+00:00",
   "result": true,
   "items": [
     {
@@ -229,7 +229,7 @@
               "exception": "ValidationError",
               "errorMessage": "'b' is a required property",
               "isError": true,
-              "message": "ValidationError: 'b' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'definitions': {'test': {'type': 'string'}},\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'a': 'http://www.google.es'}"
+              "message": "ValidationError: 'b' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'definitions': {'test': {'type': 'string'}},\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test'},\n                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'a': 'http://www.google.es'}"
             }
           ]
         },

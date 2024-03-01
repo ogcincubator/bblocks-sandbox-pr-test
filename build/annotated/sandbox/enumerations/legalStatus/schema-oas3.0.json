@@ -1,0 +1,17 @@
+{
+  "x-defs": {
+    "avillar.sandbox.enumerations.legalStatus": {
+      "type": "string",
+      "enum": [
+        "agreed",
+        "notAgreed"
+      ],
+      "x-schema-source": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema-oas3.0.json"
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema-oas3.0.json#/x-defs/avillar.sandbox.enumerations.legalStatus"
+    }
+  ]
+}

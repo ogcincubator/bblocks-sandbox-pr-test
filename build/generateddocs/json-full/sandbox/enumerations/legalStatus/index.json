@@ -1,0 +1,24 @@
+
+
+{
+  "itemIdentifier": "avillar.sandbox.enumerations.legalStatus",
+  "name": "Legal Status",
+  "abstract": "This Building Block serves as a template to create new ones",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2024-03-01",
+  "shaclRules": {},
+  "schema": {
+    "application/yaml": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml",
+    "application/json": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.json"
+  },
+  "sourceSchema": "https://avillar.github.io/bblocks-sandbox/_sources/enumerations/legalStatus/schema.yaml",
+  "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/enumerations/legalStatus/",
+  "validationPassed": true,
+  "annotatedSchema": "type: string\nenum:\n- agreed\n- notAgreed\n",
+  "gitRepository": "https://github.com/avillar/bblocks-sandbox",
+  "gitPath": "_sources/enumerations/legalStatus"
+}
