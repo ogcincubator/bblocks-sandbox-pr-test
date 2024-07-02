@@ -1,5 +1,5 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-07-02T09:19:09.783799+00:00
+Generated 2024-07-02T09:23:28.389468+00:00
 === Files ===
 Using resource1.json from test resources
 JSON-LD context is present - uplifting
