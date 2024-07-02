@@ -1,11 +1,11 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-03-01T10:21:15.398116+00:00
+Generated 2024-07-02T09:19:10.053243+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
 
 === Files ===
-Using resource3.json from examples
+Using resource3.json from test resources
 JSON-LD context is present - uplifting
 Output JSON-LD resource3.jsonld created
 Output Turtle resource3.ttl created

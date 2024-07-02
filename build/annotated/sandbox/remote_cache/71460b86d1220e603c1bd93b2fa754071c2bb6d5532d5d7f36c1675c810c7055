@@ -1,0 +1,3 @@
+properties:
+  myProp:
+    type: string
