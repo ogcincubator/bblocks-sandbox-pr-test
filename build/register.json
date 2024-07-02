@@ -2,12 +2,12 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-07-02T09:23:27.305045",
+  "modified": "2024-07-02T09:48:50.678535",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"7f88d6aa1a0177bf28d10be2694eca1bac9eccfe",
-      "shortCommitId": "\"7f88d6",
-      "date": "2024-07-02T08:56:54+00:00\""
+      "commitId": "\"5b312a09e3db11886e818c4a93af9589036e2041",
+      "shortCommitId": "\"5b312a",
+      "date": "2024-07-02T09:33:24+00:00\""
     }
   },
   "gitRepository": "https://github.com/avillar/bblocks-sandbox",
@@ -87,6 +87,7 @@
         "application/json": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/remote-cache/schema.json"
       },
       "shaclRules": {},
+      "remoteCacheDir": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/remote-cache/remote_cache/",
       "sourceSchema": "https://defs-dev.opengis.net/static/sample-schema.yml",
       "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/remote-cache/",
       "validationPassed": true,

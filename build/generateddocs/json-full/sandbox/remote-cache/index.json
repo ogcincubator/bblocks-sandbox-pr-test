@@ -31,6 +31,7 @@
     "application/json": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/remote-cache/schema.json"
   },
   "shaclRules": {},
+  "remoteCacheDir": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/remote-cache/remote_cache/",
   "sourceSchema": "https://defs-dev.opengis.net/static/sample-schema.yml",
   "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/remote-cache/",
   "validationPassed": true,
