@@ -2,12 +2,12 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-07-02T09:48:50.678535",
+  "modified": "2024-07-09T06:24:15.908825",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"5b312a09e3db11886e818c4a93af9589036e2041",
-      "shortCommitId": "\"5b312a",
-      "date": "2024-07-02T09:33:24+00:00\""
+      "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
+      "shortCommitId": "\"59af8b",
+      "date": "2024-07-08T08:08:11+00:00\""
     }
   },
   "gitRepository": "https://github.com/avillar/bblocks-sandbox",
@@ -45,10 +45,6 @@
         "json-full": {
           "mediatype": "application/json",
           "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/enumerations/legalStatus/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/sandbox/enumerations/legalStatus/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -99,10 +95,6 @@
         "json-full": {
           "mediatype": "application/json",
           "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/remote-cache/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/sandbox/remote-cache/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -158,10 +150,6 @@
         "json-full": {
           "mediatype": "application/json",
           "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/my-building-block/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/slate-build/sandbox/my-building-block/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
