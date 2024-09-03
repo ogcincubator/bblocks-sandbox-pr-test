@@ -26,3 +26,48 @@
     - language: javascript
       code: |-
         console.log('Hello, world!')
+
+- title: JSON Example
+  snippets:
+    - language: json
+      code: |-
+        {
+          "a": "http://www.google.es",
+          "b": 33,
+          "d": "agreed"
+        }
+
+- title: RDF Example with prefixes
+  prefixes:
+    dct: http://dct.org/
+    ex: http://example.com/
+  snippets:
+    - language: ttl
+      code: |-
+        ex:a dct:title ex:b .
+
+- title: JSON Example with prefixes
+  prefixes:
+    dct: http://dct.org/
+    ex: http://example.com/
+  snippets:
+    - language: json
+      code: |-
+        {
+          "dct:title": "Juan"
+        }
+
+- title: JSON-LD Example with prefixes
+  prefixes:
+    dct: http://dct.org/
+    ex: http://example.com/
+  snippets:
+    - language: jsonld
+      code: |-
+        {
+          "@context": {
+            "q": "http://q.net/"
+          },
+          "q:a": "bcd",
+          "dct:title": "Juan"
+        }

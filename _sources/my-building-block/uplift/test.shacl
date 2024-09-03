@@ -1,0 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <urn:bblocks:shacltest#> .
+@prefix m: <https://example.org/my-bb-model/> .
+
+
+:topconcepts
+  a sh:NodeShape ;
+  sh:targetSubjectsOf m:b ;
+  sh:rule [
+    a sh:SPARQLRule ;
+    rdfs:label "Add computed b property" ;
+    sh:construct """
+      PREFIX m: <https://example.org/my-bb-model/>
+      CONSTRUCT {
+        ?s m:bnew ?bnew
+      } WHERE {
+        ?s m:b ?b .
+        BIND((?b * 2) as ?bnew)
+      }
+    """ ;
+  ]
+.

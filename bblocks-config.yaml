@@ -11,4 +11,5 @@ identifier-prefix: avillar.sandbox.
 
 imports:
   - default
+  - https://opengeospatial.github.io/ogcapi-sosa
 

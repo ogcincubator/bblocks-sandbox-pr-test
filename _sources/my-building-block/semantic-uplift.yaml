@@ -1,0 +1,22 @@
+additionalSteps:
+  - type: jq
+    code: ".b |= . * 66"
+  - type: jq
+    code: ".b |= . / 11"
+  - type: sparql-construct
+    code: |
+      PREFIX m: <https://example.org/my-bb-model/>
+      CONSTRUCT {
+        ?s ?p ?o .
+        ?s m:aalias ?a
+      } WHERE { 
+        ?s ?p ?o ; 
+          m:a ?a 
+      }
+  - type: sparql-update
+    code: |
+      PREFIX m: <https://example.org/my-bb-model/>
+      DELETE { ?s m:b ?b }
+      WHERE { ?s m:b ?b FILTER(?b > 250) }
+  - type: shacl
+    ref: uplift/test.shacl
