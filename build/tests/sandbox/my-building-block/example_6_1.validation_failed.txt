@@ -1,5 +1,5 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-09-03T08:07:46.509060+00:00
+Generated 2024-09-03T08:19:45.171942+00:00
 === Files ===
 Using example_6_1.jsonld from examples
 Output Turtle example_6_1.ttl created

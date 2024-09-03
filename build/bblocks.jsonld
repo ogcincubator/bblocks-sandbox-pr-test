@@ -106,7 +106,7 @@
   "name": "Building Blocks - My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-09-03T08:07:44.196509",
+  "modified": "2024-09-03T08:19:41.914123",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"620914fd000dd7256ed3a733927e9a6948b558b6",
