@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "q": "http://q.net/"
+  },
+  "q:a": "bcd",
+  "dct:title": "Juan"
+}

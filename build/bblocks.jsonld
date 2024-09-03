@@ -106,12 +106,12 @@
   "name": "Building Blocks - My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-07-22T11:11:01.473831",
+  "modified": "2024-09-03T08:07:44.196509",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
-      "shortCommitId": "\"59af8b",
-      "date": "2024-07-08T08:08:11+00:00\""
+      "commitId": "\"620914fd000dd7256ed3a733927e9a6948b558b6",
+      "shortCommitId": "\"620914",
+      "date": "2024-08-22T11:42:38+00:00\""
     }
   },
   "gitRepository": "https://github.com/avillar/bblocks-sandbox",
@@ -120,7 +120,8 @@
   "viewerURL": "https://avillar.github.io/bblocks-sandbox/",
   "validationReport": "https://avillar.github.io/bblocks-sandbox/build/tests/report.html",
   "imports": [
-    "https://opengeospatial.github.io/bblocks/register.json"
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://opengeospatial.github.io/ogcapi-sosa/build/register.json"
   ],
   "@type": [
     "skos:ConceptScheme",
@@ -137,7 +138,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-22",
+      "dateOfLastChange": "2024-09-03",
       "shaclRules": {},
       "schema": {
         "application/yaml": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml",
@@ -147,13 +148,13 @@
       "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/enumerations/legalStatus/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/enumerations/legalStatus/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/enumerations/legalStatus/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/enumerations/legalStatus/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -175,7 +176,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-22",
+      "dateOfLastChange": "2024-09-03",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -202,13 +203,13 @@
       "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/remote-cache/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/remote-cache/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/remote-cache/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/remote-cache/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -230,7 +231,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-22",
+      "dateOfLastChange": "2024-09-03",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -259,16 +260,16 @@
       "sourceSchema": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/schema.yaml",
       "sourceLdContext": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/context.jsonld",
       "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/",
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/avillar/bblocks-sandbox/blob/master/build/tests/sandbox/my-building-block/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/my-building-block/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/my-building-block/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/my-building-block/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",

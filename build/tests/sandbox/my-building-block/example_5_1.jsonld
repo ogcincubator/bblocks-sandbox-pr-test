@@ -1,0 +1,10 @@
+{
+  "dct:title": "Juan",
+  "@context": [
+    {
+      "dct": "http://dct.org/",
+      "ex": "http://example.com/"
+    },
+    "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
+  ]
+}

@@ -1,0 +1,5 @@
+@prefix dct: <http://dct.org/> .
+@prefix ex: <http://example.com/> .
+
+ex:a dct:title ex:b .
+

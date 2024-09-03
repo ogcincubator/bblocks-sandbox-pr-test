@@ -1,7 +1,7 @@
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Schema for my building block
 type: object
-definitions:
+$defs:
   test:
     type: string
 properties:
@@ -14,7 +14,7 @@ properties:
     type: number
     x-jsonld-id: https://example.org/my-bb-model/b
   c:
-    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test
+    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test
   d:
     $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml
 required:

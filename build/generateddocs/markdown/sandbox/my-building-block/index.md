@@ -59,13 +59,108 @@ print('Hello, world!')
 console.log('Hello, world!')
 ```
 
+
+### JSON Example
+#### json
+```json
+{
+  "a": "http://www.google.es",
+  "b": 33,
+  "d": "agreed"
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "a": "http://www.google.es",
+  "b": 33,
+  "d": "agreed",
+  "@context": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
+}
+```
+
+#### ttl
+```ttl
+@prefix ns1: <https://example.org/my-bb-model/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] ns1:a <http://www.google.es> ;
+    ns1:b 33 .
+
+
+```
+
+
+### RDF Example with prefixes
+#### ttl
+```ttl
+ex:a dct:title ex:b .
+```
+
+
+### JSON Example with prefixes
+#### json
+```json
+{
+  "dct:title": "Juan"
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "dct:title": "Juan",
+  "@context": [
+    {
+      "dct": "http://dct.org/",
+      "ex": "http://example.com/"
+    },
+    "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
+  ]
+}
+```
+
+#### ttl
+```ttl
+@prefix dct: <http://dct.org/> .
+
+[] dct:title "Juan" .
+
+
+```
+
+
+### JSON-LD Example with prefixes
+#### jsonld
+```jsonld
+{
+  "@context": {
+    "q": "http://q.net/"
+  },
+  "q:a": "bcd",
+  "dct:title": "Juan"
+}
+```
+
+#### ttl
+```ttl
+@prefix dct: <http://dct.org/> .
+@prefix q: <http://q.net/> .
+
+[] dct:title "Juan" ;
+    q:a "bcd" .
+
+
+```
+
 ## Schema
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Schema for my building block
 type: object
-definitions:
+$defs:
   test:
     type: string
 properties:
@@ -78,7 +173,7 @@ properties:
     type: number
     x-jsonld-id: https://example.org/my-bb-model/b
   c:
-    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test
+    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test
   d:
     $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml
 required:

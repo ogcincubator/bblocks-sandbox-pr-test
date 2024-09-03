@@ -5,6 +5,9 @@ language_tabs:
   - shell
   - python: Python
   - javascript: Javascript
+  - json: JSON
+  - jsonld: JSON-LD
+  - turtle: RDF/Turtle
 
 toc_footers:
   - Version 0.1
@@ -29,8 +32,8 @@ This Building Block serves as a template to create new ones
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/avillar/bblocks-sandbox/blob/master/build/tests/sandbox/my-building-block/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/avillar/bblocks-sandbox/blob/master/build/tests/sandbox/my-building-block/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -74,17 +77,35 @@ In **Markdown** format.
 echo 'Hello, world!'
 ```
 
+<blockquote class="lang-specific shell">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_2_1.shell">Open in new window</a>
+</blockquote>
+
+
 
 
 ```python
 print('Hello, world!')
 ```
 
+<blockquote class="lang-specific python">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_2_2.python">Open in new window</a>
+</blockquote>
+
+
 
 
 ```javascript
 console.log('Hello, world!')
 ```
+
+<blockquote class="lang-specific javascript">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_2_3.javascript">Open in new window</a>
+</blockquote>
+
 
 The content of this example. 
 
@@ -93,13 +114,180 @@ The content of this example.
 ![Image](assets/example.png)
 
 
+## JSON Example
+
+
+
+```json
+{
+  "a": "http://www.google.es",
+  "b": 33,
+  "d": "agreed"
+}
+```
+
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Favillar.github.io%2Fbblocks-sandbox%2Fbuild%2Ftests%2Fsandbox%2Fmy-building-block%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+
+
+
+
+```jsonld
+{
+  "a": "http://www.google.es",
+  "b": 33,
+  "d": "agreed",
+  "@context": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Favillar.github.io%2Fbblocks-sandbox%2Fbuild%2Ftests%2Fsandbox%2Fmy-building-block%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
+```turtle
+@prefix ns1: <https://example.org/my-bb-model/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] ns1:a <http://www.google.es> ;
+    ns1:b 33 .
+
+
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
+## RDF Example with prefixes
+
+
+
+```turtle
+ex:a dct:title ex:b .
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_4_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
+## JSON Example with prefixes
+
+
+
+```json
+{
+  "dct:title": "Juan"
+}
+```
+
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Favillar.github.io%2Fbblocks-sandbox%2Fbuild%2Ftests%2Fsandbox%2Fmy-building-block%2Fexample_5_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+
+
+
+
+```jsonld
+{
+  "dct:title": "Juan",
+  "@context": [
+    {
+      "dct": "http://dct.org/",
+      "ex": "http://example.com/"
+    },
+    "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
+  ]
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Favillar.github.io%2Fbblocks-sandbox%2Fbuild%2Ftests%2Fsandbox%2Fmy-building-block%2Fexample_5_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
+```turtle
+@prefix dct: <http://dct.org/> .
+
+[] dct:title "Juan" .
+
+
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
+## JSON-LD Example with prefixes
+
+
+
+```jsonld
+{
+  "@context": {
+    "q": "http://q.net/"
+  },
+  "q:a": "bcd",
+  "dct:title": "Juan"
+}
+```
+
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_6_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Favillar.github.io%2Fbblocks-sandbox%2Fbuild%2Ftests%2Fsandbox%2Fmy-building-block%2Fexample_6_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
+
+
+
+
+```turtle
+@prefix dct: <http://dct.org/> .
+@prefix q: <http://q.net/> .
+
+[] dct:title "Juan" ;
+    q:a "bcd" .
+
+
+```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_6_1.ttl">Open in new window</a>
+</blockquote>
+
+
+
 # JSON Schema
 
 ```yaml--schema
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Schema for my building block
 type: object
-definitions:
+$defs:
   test:
     type: string
 properties:
@@ -112,7 +300,7 @@ properties:
     type: number
     x-jsonld-id: https://example.org/my-bb-model/b
   c:
-    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test
+    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test
   d:
     $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml
 required:

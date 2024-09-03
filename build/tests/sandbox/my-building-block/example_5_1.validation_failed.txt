@@ -1,20 +1,16 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-09-03T08:07:46.252543+00:00
-=== General ===
-Test was expected to fail and it did.
-=== End General ===
-
+Generated 2024-09-03T08:07:46.507134+00:00
 === Files ===
-Using resource3.json from test resources
+Using example_5_1.json from examples
 JSON-LD context is present - uplifting
-Output JSON-LD resource3.jsonld created
-Output Turtle resource3.ttl created
+Output JSON-LD example_5_1.jsonld created
+Output Turtle example_5_1.ttl created
 === End Files ===
 
 === JSON Schema ===
 
 ** Validation error **
-ValidationError: 'b' is a required property
+ValidationError: 'a' is a required property
 
 Failed validating 'required' in schema:
     {'$defs': {'test': {'type': 'string'}},
@@ -32,6 +28,6 @@ Failed validating 'required' in schema:
      'type': 'object'}
 
 On instance:
-    {'a': 'http://www.google.es'}
+    {'dct:title': 'Juan'}
 === End JSON Schema ===
 

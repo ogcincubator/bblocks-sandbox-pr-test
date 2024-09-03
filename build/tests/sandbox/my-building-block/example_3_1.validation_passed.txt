@@ -1,10 +1,10 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-09-03T08:07:46.499786+00:00
+Generated 2024-09-03T08:07:46.502550+00:00
 === Files ===
-Using one-again.json from test resources
+Using example_3_1.json from examples
 JSON-LD context is present - uplifting
-Output JSON-LD one-again.jsonld created
-Output Turtle one-again.ttl created
+Output JSON-LD example_3_1.jsonld created
+Output Turtle example_3_1.ttl created
 === End Files ===
 
 === JSON Schema ===

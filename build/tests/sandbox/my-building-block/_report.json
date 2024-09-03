@@ -2,8 +2,8 @@
   "title": "Validation report for avillar.sandbox.my-building-block - My Building Block",
   "bblockName": "My Building Block",
   "bblockId": "avillar.sandbox.my-building-block",
-  "generated": "2024-07-22T11:11:04.869787+00:00",
-  "result": true,
+  "generated": "2024-09-03T08:07:46.509109+00:00",
+  "result": false,
   "items": [
     {
       "source": {
@@ -16,11 +16,6 @@
       },
       "result": true,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -61,26 +56,6 @@
               "message": "Validation passed"
             }
           ]
-        },
-        {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": []
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     },
@@ -148,26 +123,6 @@
               "message": "ValidationError: 123 is not of type 'string'\n\nFailed validating 'type' in schema['properties']['a']:\n    {'format': 'uri',\n     'type': 'string',\n     'x-jsonld-id': 'https://example.org/my-bb-model/a',\n     'x-jsonld-type': '@id'}\n\nOn instance['a']:\n    123"
             }
           ]
-        },
-        {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": []
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     },
@@ -232,29 +187,9 @@
               "exception": "ValidationError",
               "errorMessage": "'b' is a required property",
               "isError": true,
-              "message": "ValidationError: 'b' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'definitions': {'test': {'type': 'string'}},\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test'},\n                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'a': 'http://www.google.es'}"
+              "message": "ValidationError: 'b' is a required property\n\nFailed validating 'required' in schema:\n    {'$defs': {'test': {'type': 'string'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test'},\n                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'a': 'http://www.google.es'}"
             }
           ]
-        },
-        {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": []
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     },
@@ -283,7 +218,27 @@
         {
           "name": "FILES",
           "title": "Files",
-          "entries": []
+          "entries": [
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "resource4.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD resource4.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "resource4.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle resource4.ttl created"
+            }
+          ]
         },
         {
           "name": "JSON_SCHEMA",
@@ -297,26 +252,6 @@
               "message": "Error parsing JSON example: Expecting property name enclosed in double quotes: line 2 column 3 (char 4) on or near line 2 column 3"
             }
           ]
-        },
-        {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": []
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     },
@@ -331,11 +266,6 @@
       },
       "result": true,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -376,34 +306,214 @@
               "message": "Validation passed"
             }
           ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/sandbox/my-building-block/example_3_1.json",
+        "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.json",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_3_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_3_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_3_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_3_1.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle example_3_1.ttl created"
+            }
+          ]
         },
         {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/sandbox/my-building-block/example_4_1.ttl",
+        "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_4_1.ttl",
+        "exampleIndex": 4,
+        "snippetIndex": 1,
+        "language": "ttl"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_4_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_4_1.ttl",
+              "size": 1,
+              "isError": false,
+              "message": "Output Turtle example_4_1.ttl created"
+            }
+          ]
         },
         {
           "name": "TURTLE",
           "title": "Turtle",
-          "entries": []
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for dct, ex"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/sandbox/my-building-block/example_5_1.json",
+        "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.json",
+        "exampleIndex": 5,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_5_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_5_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_5_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_5_1.ttl",
+              "size": 1,
+              "isError": false,
+              "message": "Output Turtle example_5_1.ttl created"
+            }
+          ]
         },
         {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": []
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'a' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'a' is a required property\n\nFailed validating 'required' in schema:\n    {'$defs': {'test': {'type': 'string'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test'},\n                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'dct:title': 'Juan'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/sandbox/my-building-block/example_6_1.jsonld",
+        "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_6_1.jsonld",
+        "exampleIndex": 6,
+        "snippetIndex": 1,
+        "language": "jsonld"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_6_1.jsonld from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_6_1.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle example_6_1.ttl created"
+            }
+          ]
         },
         {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'a' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'a' is a required property\n\nFailed validating 'required' in schema:\n    {'$defs': {'test': {'type': 'string'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test'},\n                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'@context': {'q': 'http://q.net/'}, 'dct:title': 'Juan', 'q:a': 'bcd'}"
+            }
+          ]
         }
       ]
     }
   ],
   "globalErrors": {},
   "counts": {
-    "total": 5,
-    "passed": 5,
-    "failed": 0
+    "total": 9,
+    "passed": 7,
+    "failed": 2
   }
 }

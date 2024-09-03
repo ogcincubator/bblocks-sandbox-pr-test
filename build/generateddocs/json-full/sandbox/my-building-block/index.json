@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-22",
+  "dateOfLastChange": "2024-09-03",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -38,7 +38,7 @@
   "sourceSchema": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/schema.yaml",
   "sourceLdContext": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/context.jsonld",
   "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/avillar/bblocks-sandbox/blob/master/build/tests/sandbox/my-building-block/",
   "description": "## Qui hastarum tectus Cithaeron iuvabat\n\nLorem markdownum vestigia sanguine rursus undis, suspenderat meo mox conlegerat\ntemperat sucos. Est graves dant sentire sanguinis flores respondent testari.\n\n** This is a relative URL: [example.png](assets/example.png) **.\n\n![Image](assets/example.png)\n\n> Videri vias quid Ausoniae sua flores ante, reminiscitur fuit est. Semel\n> [hectora](http://silvaque.org/) peregrinaeque rudem exercent in, Troiana si\n> Asida instabilesque somno sed.\n\n## Iam vota cui dilataque peterem\n\nTinxit lumina lacer liquidarum Aiax si mergitur sed fueris capitisque **et\ncadit** contigerant rectum [ferar](http://prosternit.com/quoque.html) temperat.\nMonet caput adsensere Ityn furentibus gelidos.",
   "examples": [
@@ -52,20 +52,100 @@
       "snippets": [
         {
           "language": "shell",
-          "code": "echo 'Hello, world!'"
+          "code": "echo 'Hello, world!'",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_2_1.shell"
         },
         {
           "language": "python",
-          "code": "print('Hello, world!')"
+          "code": "print('Hello, world!')",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_2_2.python"
         },
         {
           "language": "javascript",
-          "code": "console.log('Hello, world!')"
+          "code": "console.log('Hello, world!')",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_2_3.javascript"
+        }
+      ]
+    },
+    {
+      "title": "JSON Example",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"a\": \"http://www.google.es\",\n  \"b\": 33,\n  \"d\": \"agreed\"\n}",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"a\": \"http://www.google.es\",\n  \"b\": 33,\n  \"d\": \"agreed\",\n  \"@context\": \"https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld\"\n}",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix ns1: <https://example.org/my-bb-model/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ns1:a <http://www.google.es> ;\n    ns1:b 33 .\n\n",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "RDF Example with prefixes",
+      "prefixes": {
+        "dct": "http://dct.org/",
+        "ex": "http://example.com/"
+      },
+      "snippets": [
+        {
+          "language": "ttl",
+          "code": "ex:a dct:title ex:b .",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_4_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "JSON Example with prefixes",
+      "prefixes": {
+        "dct": "http://dct.org/",
+        "ex": "http://example.com/"
+      },
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"dct:title\": \"Juan\"\n}",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"dct:title\": \"Juan\",\n  \"@context\": [\n    {\n      \"dct\": \"http://dct.org/\",\n      \"ex\": \"http://example.com/\"\n    },\n    \"https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld\"\n  ]\n}",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dct: <http://dct.org/> .\n\n[] dct:title \"Juan\" .\n\n",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "JSON-LD Example with prefixes",
+      "prefixes": {
+        "dct": "http://dct.org/",
+        "ex": "http://example.com/"
+      },
+      "snippets": [
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": {\n    \"q\": \"http://q.net/\"\n  },\n  \"q:a\": \"bcd\",\n  \"dct:title\": \"Juan\"\n}",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_6_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dct: <http://dct.org/> .\n@prefix q: <http://q.net/> .\n\n[] dct:title \"Juan\" ;\n    q:a \"bcd\" .\n\n",
+          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_6_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for my building block\ntype: object\ndefinitions:\n  test:\n    type: string\nproperties:\n  a:\n    type: string\n    format: uri\n    x-jsonld-id: https://example.org/my-bb-model/a\n    x-jsonld-type: '@id'\n  b:\n    type: number\n    x-jsonld-id: https://example.org/my-bb-model/b\n  c:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/definitions/test\n  d:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml\nrequired:\n- a\n- b\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for my building block\ntype: object\n$defs:\n  test:\n    type: string\nproperties:\n  a:\n    type: string\n    format: uri\n    x-jsonld-id: https://example.org/my-bb-model/a\n    x-jsonld-type: '@id'\n  b:\n    type: number\n    x-jsonld-id: https://example.org/my-bb-model/b\n  c:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test\n  d:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml\nrequired:\n- a\n- b\n",
   "gitRepository": "https://github.com/avillar/bblocks-sandbox",
   "gitPath": "_sources/my-building-block"
 }
