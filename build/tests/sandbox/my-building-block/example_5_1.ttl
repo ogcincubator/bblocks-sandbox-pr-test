@@ -1,4 +1,0 @@
-@prefix dct: <http://dct.org/> .
-
-[] dct:title "Juan" .
-

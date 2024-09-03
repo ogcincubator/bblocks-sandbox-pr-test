@@ -2,5 +2,5 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] ns1:a 123 ;
-    ns1:b 99 .
+    ns1:aalias 123 .
 

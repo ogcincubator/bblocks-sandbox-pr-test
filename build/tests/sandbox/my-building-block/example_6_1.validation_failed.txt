@@ -1,8 +1,10 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-09-03T08:19:45.171942+00:00
+Generated 2024-09-03T08:44:27.446487+00:00
 === Files ===
 Using example_6_1.jsonld from examples
-Output Turtle example_6_1.ttl created
+
+** Validation error **
+**Empty** output Turtle example_6_1.ttl created
 === End Files ===
 
 === JSON Schema ===
@@ -28,4 +30,10 @@ Failed validating 'required' in schema:
 On instance:
     {'@context': {'q': 'http://q.net/'}, 'dct:title': 'Juan', 'q:a': 'bcd'}
 === End JSON Schema ===
+
+=== Semantic Uplift ===
+Running post-uplift sparql-construct transform step from inline code
+Running post-uplift sparql-update transform step from inline code
+Running post-uplift shacl transform step from uplift/test.shacl
+=== End Semantic Uplift ===
 

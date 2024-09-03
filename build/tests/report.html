@@ -51,7 +51,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-09-03T08:19:45.185320+00:00</small>
+            <small class="datetime">Generated at 2024-09-03T08:44:27.461461+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 2 / 3 (66.67%)
                 </p>
@@ -150,6 +150,12 @@
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle resource1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-construct transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-update transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift shacl transform step from uplift/test.shacl</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -191,6 +197,12 @@ Failed validating &#x27;type&#x27; in schema[&#x27;properties&#x27;][&#x27;a&#x2
 
 On instance[&#x27;a&#x27;]:
     123</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-construct transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-update transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift shacl transform step from uplift/test.shacl</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -219,8 +231,6 @@ On instance[&#x27;a&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using resource3.json from test resources</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD resource3.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle resource3.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;b&#x27; is a required property
 
@@ -241,6 +251,26 @@ Failed validating &#x27;required&#x27; in schema:
 
 On instance:
     {&#x27;a&#x27;: &#x27;http://www.google.es&#x27;}</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Unknown errors</div>
+                                                                    <div class="font-monospace entry-message section-unknown text-danger">Traceback (most recent call last):
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 184, in _validate_resource
+    result = validator.validate(filename, output_filename, report,
+,  File &quot;/src/ogc/bblocks/validation/rdf.py&quot;, line 299, in validate
+    graph = self._load_graph(filename, output_filename, report, contents, base_uri, prefixes)
+,  File &quot;/src/ogc/bblocks/validation/rdf.py&quot;, line 163, in _load_graph
+    json_doc = self.uplifter.pre_uplift(report, json_doc)
+,  File &quot;/src/ogc/bblocks/validation/uplift.py&quot;, line 40, in pre_uplift
+    return self._run_steps(&#x27;pre&#x27;, report, json_doc)
+,  File &quot;/src/ogc/bblocks/validation/uplift.py&quot;, line 36, in _run_steps
+    input_data = getattr(self, func_name)(code, input_data, *args)
+,  File &quot;/src/ogc/bblocks/validation/uplift.py&quot;, line 47, in _pre_jq
+    return jq.compile(code).input_value(json_doc).first()
+,  File &quot;jq.pyx&quot;, line 322, in jq._ProgramWithInput.first
+,  File &quot;jq.pyx&quot;, line 366, in jq._ResultIterator.__next__
+,ValueError: null (null) and number (66) cannot be multiplied
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -272,6 +302,12 @@ On instance:
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle resource4.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">Error parsing JSON example: Expecting property name enclosed in double quotes: line 2 column 3 (char 4) on or near line 2 column 3</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-construct transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-update transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift shacl transform step from uplift/test.shacl</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -301,6 +337,12 @@ On instance:
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle one-again.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-construct transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-update transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift shacl transform step from uplift/test.shacl</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -330,6 +372,12 @@ On instance:
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-construct transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-update transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift shacl transform step from uplift/test.shacl</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -382,8 +430,6 @@ On instance:
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_5_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_5_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_5_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;a&#x27; is a required property
 
@@ -404,6 +450,26 @@ Failed validating &#x27;required&#x27; in schema:
 
 On instance:
     {&#x27;dct:title&#x27;: &#x27;Juan&#x27;}</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running pre-uplift jq transform step from inline code</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Unknown errors</div>
+                                                                    <div class="font-monospace entry-message section-unknown text-danger">Traceback (most recent call last):
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 184, in _validate_resource
+    result = validator.validate(filename, output_filename, report,
+,  File &quot;/src/ogc/bblocks/validation/rdf.py&quot;, line 299, in validate
+    graph = self._load_graph(filename, output_filename, report, contents, base_uri, prefixes)
+,  File &quot;/src/ogc/bblocks/validation/rdf.py&quot;, line 163, in _load_graph
+    json_doc = self.uplifter.pre_uplift(report, json_doc)
+,  File &quot;/src/ogc/bblocks/validation/uplift.py&quot;, line 40, in pre_uplift
+    return self._run_steps(&#x27;pre&#x27;, report, json_doc)
+,  File &quot;/src/ogc/bblocks/validation/uplift.py&quot;, line 36, in _run_steps
+    input_data = getattr(self, func_name)(code, input_data, *args)
+,  File &quot;/src/ogc/bblocks/validation/uplift.py&quot;, line 47, in _pre_jq
+    return jq.compile(code).input_value(json_doc).first()
+,  File &quot;jq.pyx&quot;, line 322, in jq._ProgramWithInput.first
+,  File &quot;jq.pyx&quot;, line 366, in jq._ResultIterator.__next__
+,ValueError: null (null) and number (66) cannot be multiplied
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -428,7 +494,7 @@ On instance:
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_6_1.jsonld from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_6_1.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files text-danger">**Empty** output Turtle example_6_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;a&#x27; is a required property
 
@@ -449,6 +515,10 @@ Failed validating &#x27;required&#x27; in schema:
 
 On instance:
     {&#x27;@context&#x27;: {&#x27;q&#x27;: &#x27;http://q.net/&#x27;}, &#x27;dct:title&#x27;: &#x27;Juan&#x27;, &#x27;q:a&#x27;: &#x27;bcd&#x27;}</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Semantic Uplift</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-construct transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift sparql-update transform step from inline code</div>
+                                                                    <div class="font-monospace entry-message section-semantic_uplift ">Running post-uplift shacl transform step from uplift/test.shacl</div>
                                                     </div>
                                                 </div>
                                             </div>

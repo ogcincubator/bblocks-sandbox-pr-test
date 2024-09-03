@@ -1,6 +1,1 @@
-@prefix dct: <http://dct.org/> .
-@prefix q: <http://q.net/> .
-
-[] dct:title "Juan" ;
-    q:a "bcd" .
-
+# Empty Turtle file

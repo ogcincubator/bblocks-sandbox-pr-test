@@ -16,12 +16,12 @@
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/my-building-block/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/my-building-block/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/avillar.sandbox.my-building-block" ] ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/avillar.sandbox.my-building-block" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/my-building-block/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-09-03"^^xsd:date ;
+    dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     modspec:class <http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/historical-location>,
         <http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/thing> ;
@@ -41,14 +41,14 @@
     rdfs:label "My Building Block" ;
     dct:abstract "This Building Block serves as a template to create new ones" ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/remote-cache/index.json" ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/avillar.sandbox.remote-cache" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/remote-cache/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/remote-cache/index.json" ] ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/remote-cache/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-09-03"^^xsd:date ;
+    dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     modspec:class <http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/historical-location>,
         <http://www.opengis.net/spec/iot_sensing/1.1/conf/datamodel/thing> ;
@@ -67,12 +67,12 @@
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/markdown/sandbox/enumerations/legalStatus/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/avillar.sandbox.enumerations.legalStatus" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/enumerations/legalStatus/index.json" ] ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/build/generateddocs/json-full/sandbox/enumerations/legalStatus/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://avillar.github.io/bblocks-sandbox/bblock/avillar.sandbox.enumerations.legalStatus" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-09-03"^^xsd:date ;
+    dct:modified "2023-04-05"^^xsd:date ;
     skos:inScheme <https://avillar.github.io/bblocks-sandbox/> ;
     bblocks:hasSchema <https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.json>,
         <https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml> ;
@@ -95,11 +95,11 @@ including [links](https://google.es).
         <https://opengeospatial.github.io/ogcapi-sosa/build/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-09-03T08:19:45.247149"^^xsd:dateTime ;
-    prov:startedAtTime "2024-09-03T08:19:45.186344"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-03T08:44:27.524842"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-03T08:44:27.462572"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:2a63fe744b5eb1f0723551cd0c52af11d4901f98" ;
+            dct:hasVersion "git:6d9111c470516762157a8ef4f206b08557a35c67" ;
             rdfs:seeAlso <https://avillar.github.io/bblocks-sandbox/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;

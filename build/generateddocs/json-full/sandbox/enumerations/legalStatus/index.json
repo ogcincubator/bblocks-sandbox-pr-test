@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-09-03",
+  "dateOfLastChange": "2023-04-05",
   "shaclRules": {},
   "schema": {
     "application/yaml": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml",

@@ -138,7 +138,7 @@ The content of this example.
 ```jsonld
 {
   "a": "http://www.google.es",
-  "b": 33,
+  "b": 198,
   "d": "agreed",
   "@context": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
 }
@@ -158,7 +158,9 @@ The content of this example.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] ns1:a <http://www.google.es> ;
-    ns1:b 33 .
+    ns1:aalias <http://www.google.es> ;
+    ns1:b 198 ;
+    ns1:bnew 396.0 .
 
 
 ```
@@ -203,44 +205,6 @@ ex:a dct:title ex:b .
 
 
 
-
-```jsonld
-{
-  "dct:title": "Juan",
-  "@context": [
-    {
-      "dct": "http://dct.org/",
-      "ex": "http://example.com/"
-    },
-    "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
-  ]
-}
-```
-
-<blockquote class="lang-specific jsonld">
-  <p class="example-links">
-    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Favillar.github.io%2Fbblocks-sandbox%2Fbuild%2Ftests%2Fsandbox%2Fmy-building-block%2Fexample_5_1.jsonld">View on JSON-LD Playground</a>
-</blockquote>
-
-
-
-
-```turtle
-@prefix dct: <http://dct.org/> .
-
-[] dct:title "Juan" .
-
-
-```
-
-<blockquote class="lang-specific turtle">
-  <p class="example-links">
-    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.ttl">Open in new window</a>
-</blockquote>
-
-
-
 ## JSON-LD Example with prefixes
 
 
@@ -261,23 +225,6 @@ ex:a dct:title ex:b .
     <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Favillar.github.io%2Fbblocks-sandbox%2Fbuild%2Ftests%2Fsandbox%2Fmy-building-block%2Fexample_6_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
-
-
-
-```turtle
-@prefix dct: <http://dct.org/> .
-@prefix q: <http://q.net/> .
-
-[] dct:title "Juan" ;
-    q:a "bcd" .
-
-
-```
-
-<blockquote class="lang-specific turtle">
-  <p class="example-links">
-    <a target="_blank" href="https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_6_1.ttl">Open in new window</a>
-</blockquote>
 
 
 

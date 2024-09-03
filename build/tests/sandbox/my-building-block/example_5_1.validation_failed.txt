@@ -1,10 +1,8 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-09-03T08:19:45.170028+00:00
+Generated 2024-09-03T08:44:27.436731+00:00
 === Files ===
 Using example_5_1.json from examples
 JSON-LD context is present - uplifting
-Output JSON-LD example_5_1.jsonld created
-Output Turtle example_5_1.ttl created
 === End Files ===
 
 === JSON Schema ===
@@ -30,4 +28,30 @@ Failed validating 'required' in schema:
 On instance:
     {'dct:title': 'Juan'}
 === End JSON Schema ===
+
+=== Semantic Uplift ===
+Running pre-uplift jq transform step from inline code
+=== End Semantic Uplift ===
+
+=== Unknown errors ===
+
+** Validation error **
+Traceback (most recent call last):
+,  File "/src/ogc/bblocks/validate.py", line 184, in _validate_resource
+    result = validator.validate(filename, output_filename, report,
+,  File "/src/ogc/bblocks/validation/rdf.py", line 299, in validate
+    graph = self._load_graph(filename, output_filename, report, contents, base_uri, prefixes)
+,  File "/src/ogc/bblocks/validation/rdf.py", line 163, in _load_graph
+    json_doc = self.uplifter.pre_uplift(report, json_doc)
+,  File "/src/ogc/bblocks/validation/uplift.py", line 40, in pre_uplift
+    return self._run_steps('pre', report, json_doc)
+,  File "/src/ogc/bblocks/validation/uplift.py", line 36, in _run_steps
+    input_data = getattr(self, func_name)(code, input_data, *args)
+,  File "/src/ogc/bblocks/validation/uplift.py", line 47, in _pre_jq
+    return jq.compile(code).input_value(json_doc).first()
+,  File "jq.pyx", line 322, in jq._ProgramWithInput.first
+,  File "jq.pyx", line 366, in jq._ResultIterator.__next__
+,ValueError: null (null) and number (66) cannot be multiplied
+
+=== End Unknown errors ===
 

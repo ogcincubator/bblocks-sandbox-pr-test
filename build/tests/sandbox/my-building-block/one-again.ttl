@@ -1,6 +1,5 @@
 @prefix ns1: <https://example.org/my-bb-model/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] ns1:a <http://www.google.es> ;
-    ns1:b 99 .
+    ns1:aalias <http://www.google.es> .
 

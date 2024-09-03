@@ -74,7 +74,7 @@ console.log('Hello, world!')
 ```jsonld
 {
   "a": "http://www.google.es",
-  "b": 33,
+  "b": 198,
   "d": "agreed",
   "@context": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
 }
@@ -86,7 +86,9 @@ console.log('Hello, world!')
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] ns1:a <http://www.google.es> ;
-    ns1:b 33 .
+    ns1:aalias <http://www.google.es> ;
+    ns1:b 198 ;
+    ns1:bnew 396.0 .
 
 
 ```
@@ -107,29 +109,6 @@ ex:a dct:title ex:b .
 }
 ```
 
-#### jsonld
-```jsonld
-{
-  "dct:title": "Juan",
-  "@context": [
-    {
-      "dct": "http://dct.org/",
-      "ex": "http://example.com/"
-    },
-    "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
-  ]
-}
-```
-
-#### ttl
-```ttl
-@prefix dct: <http://dct.org/> .
-
-[] dct:title "Juan" .
-
-
-```
-
 
 ### JSON-LD Example with prefixes
 #### jsonld
@@ -145,11 +124,6 @@ ex:a dct:title ex:b .
 
 #### ttl
 ```ttl
-@prefix dct: <http://dct.org/> .
-@prefix q: <http://q.net/> .
-
-[] dct:title "Juan" ;
-    q:a "bcd" .
 
 
 ```

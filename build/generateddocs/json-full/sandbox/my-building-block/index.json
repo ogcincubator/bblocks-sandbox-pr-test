@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-09-03",
+  "dateOfLastChange": "2023-04-05",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -77,12 +77,12 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"a\": \"http://www.google.es\",\n  \"b\": 33,\n  \"d\": \"agreed\",\n  \"@context\": \"https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld\"\n}",
+          "code": "{\n  \"a\": \"http://www.google.es\",\n  \"b\": 198,\n  \"d\": \"agreed\",\n  \"@context\": \"https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld\"\n}",
           "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.jsonld"
         },
         {
           "language": "ttl",
-          "code": "@prefix ns1: <https://example.org/my-bb-model/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ns1:a <http://www.google.es> ;\n    ns1:b 33 .\n\n",
+          "code": "@prefix ns1: <https://example.org/my-bb-model/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] ns1:a <http://www.google.es> ;\n    ns1:aalias <http://www.google.es> ;\n    ns1:b 198 ;\n    ns1:bnew 396.0 .\n\n",
           "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_3_1.ttl"
         }
       ]
@@ -112,16 +112,6 @@
           "language": "json",
           "code": "{\n  \"dct:title\": \"Juan\"\n}",
           "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.json"
-        },
-        {
-          "language": "jsonld",
-          "code": "{\n  \"dct:title\": \"Juan\",\n  \"@context\": [\n    {\n      \"dct\": \"http://dct.org/\",\n      \"ex\": \"http://example.com/\"\n    },\n    \"https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld\"\n  ]\n}",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.jsonld"
-        },
-        {
-          "language": "ttl",
-          "code": "@prefix dct: <http://dct.org/> .\n\n[] dct:title \"Juan\" .\n\n",
-          "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_5_1.ttl"
         }
       ]
     },
@@ -139,13 +129,42 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix dct: <http://dct.org/> .\n@prefix q: <http://q.net/> .\n\n[] dct:title \"Juan\" ;\n    q:a \"bcd\" .\n\n",
+          "code": "\n",
           "url": "https://avillar.github.io/bblocks-sandbox/build/tests/sandbox/my-building-block/example_6_1.ttl"
         }
       ]
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for my building block\ntype: object\n$defs:\n  test:\n    type: string\nproperties:\n  a:\n    type: string\n    format: uri\n    x-jsonld-id: https://example.org/my-bb-model/a\n    x-jsonld-type: '@id'\n  b:\n    type: number\n    x-jsonld-id: https://example.org/my-bb-model/b\n  c:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test\n  d:\n    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml\nrequired:\n- a\n- b\n",
+  "semanticUplift": {
+    "additionalSteps": [
+      {
+        "type": "jq",
+        "code": ".b |= . * 66",
+        "stage": "pre"
+      },
+      {
+        "type": "jq",
+        "code": ".b |= . / 11",
+        "stage": "pre"
+      },
+      {
+        "type": "sparql-construct",
+        "code": "PREFIX m: <https://example.org/my-bb-model/>\nCONSTRUCT {\n  ?s ?p ?o .\n  ?s m:aalias ?a\n} WHERE { \n  ?s ?p ?o ; \n    m:a ?a \n}\n",
+        "stage": "post"
+      },
+      {
+        "type": "sparql-update",
+        "code": "PREFIX m: <https://example.org/my-bb-model/>\nDELETE { ?s m:b ?b }\nWHERE { ?s m:b ?b FILTER(?b > 250) }\n",
+        "stage": "post"
+      },
+      {
+        "type": "shacl",
+        "ref": "https://avillar.github.io/bblocks-sandbox/_sources/my-building-block/uplift/test.shacl",
+        "stage": "post"
+      }
+    ]
+  },
   "gitRepository": "https://github.com/avillar/bblocks-sandbox",
   "gitPath": "_sources/my-building-block"
 }

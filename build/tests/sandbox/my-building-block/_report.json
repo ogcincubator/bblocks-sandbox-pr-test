@@ -2,7 +2,7 @@
   "title": "Validation report for avillar.sandbox.my-building-block - My Building Block",
   "bblockName": "My Building Block",
   "bblockId": "avillar.sandbox.my-building-block",
-  "generated": "2024-09-03T08:19:45.171991+00:00",
+  "generated": "2024-09-03T08:44:27.446540+00:00",
   "result": false,
   "items": [
     {
@@ -54,6 +54,32 @@
               "result": true,
               "isError": false,
               "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-construct transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-update transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift shacl transform step from uplift/test.shacl"
             }
           ]
         }
@@ -123,6 +149,32 @@
               "message": "ValidationError: 123 is not of type 'string'\n\nFailed validating 'type' in schema['properties']['a']:\n    {'format': 'uri',\n     'type': 'string',\n     'x-jsonld-id': 'https://example.org/my-bb-model/a',\n     'x-jsonld-type': '@id'}\n\nOn instance['a']:\n    123"
             }
           ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-construct transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-update transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift shacl transform step from uplift/test.shacl"
+            }
+          ]
         }
       ]
     },
@@ -160,20 +212,6 @@
               "op": "jsonld-uplift",
               "isError": false,
               "message": "JSON-LD context is present - uplifting"
-            },
-            {
-              "op": "jsonld-create",
-              "filename": "resource3.jsonld",
-              "isError": false,
-              "message": "Output JSON-LD resource3.jsonld created"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "resource3.ttl",
-              "size": 1,
-              "isError": false,
-              "message": "Output Turtle resource3.ttl created"
             }
           ]
         },
@@ -188,6 +226,27 @@
               "errorMessage": "'b' is a required property",
               "isError": true,
               "message": "ValidationError: 'b' is a required property\n\nFailed validating 'required' in schema:\n    {'$defs': {'test': {'type': 'string'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test'},\n                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'a': 'http://www.google.es'}"
+            }
+          ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            }
+          ]
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": [
+            {
+              "exception": "ValueError",
+              "isError": true,
+              "message": "Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 184, in _validate_resource\n    result = validator.validate(filename, output_filename, report,\n,  File \"/src/ogc/bblocks/validation/rdf.py\", line 299, in validate\n    graph = self._load_graph(filename, output_filename, report, contents, base_uri, prefixes)\n,  File \"/src/ogc/bblocks/validation/rdf.py\", line 163, in _load_graph\n    json_doc = self.uplifter.pre_uplift(report, json_doc)\n,  File \"/src/ogc/bblocks/validation/uplift.py\", line 40, in pre_uplift\n    return self._run_steps('pre', report, json_doc)\n,  File \"/src/ogc/bblocks/validation/uplift.py\", line 36, in _run_steps\n    input_data = getattr(self, func_name)(code, input_data, *args)\n,  File \"/src/ogc/bblocks/validation/uplift.py\", line 47, in _pre_jq\n    return jq.compile(code).input_value(json_doc).first()\n,  File \"jq.pyx\", line 322, in jq._ProgramWithInput.first\n,  File \"jq.pyx\", line 366, in jq._ResultIterator.__next__\n,ValueError: null (null) and number (66) cannot be multiplied\n"
             }
           ]
         }
@@ -252,6 +311,32 @@
               "message": "Error parsing JSON example: Expecting property name enclosed in double quotes: line 2 column 3 (char 4) on or near line 2 column 3"
             }
           ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-construct transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-update transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift shacl transform step from uplift/test.shacl"
+            }
+          ]
         }
       ]
     },
@@ -306,6 +391,32 @@
               "message": "Validation passed"
             }
           ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-construct transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-update transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift shacl transform step from uplift/test.shacl"
+            }
+          ]
         }
       ]
     },
@@ -344,7 +455,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_3_1.ttl",
-              "size": 2,
+              "size": 4,
               "isError": false,
               "message": "Output Turtle example_3_1.ttl created"
             }
@@ -359,6 +470,32 @@
               "result": true,
               "isError": false,
               "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-construct transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-update transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift shacl transform step from uplift/test.shacl"
             }
           ]
         }
@@ -430,20 +567,6 @@
               "op": "jsonld-uplift",
               "isError": false,
               "message": "JSON-LD context is present - uplifting"
-            },
-            {
-              "op": "jsonld-create",
-              "filename": "example_5_1.jsonld",
-              "isError": false,
-              "message": "Output JSON-LD example_5_1.jsonld created"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "example_5_1.ttl",
-              "size": 1,
-              "isError": false,
-              "message": "Output Turtle example_5_1.ttl created"
             }
           ]
         },
@@ -458,6 +581,27 @@
               "errorMessage": "'a' is a required property",
               "isError": true,
               "message": "ValidationError: 'a' is a required property\n\nFailed validating 'required' in schema:\n    {'$defs': {'test': {'type': 'string'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test'},\n                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'dct:title': 'Juan'}"
+            }
+          ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running pre-uplift jq transform step from inline code"
+            }
+          ]
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": [
+            {
+              "exception": "ValueError",
+              "isError": true,
+              "message": "Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 184, in _validate_resource\n    result = validator.validate(filename, output_filename, report,\n,  File \"/src/ogc/bblocks/validation/rdf.py\", line 299, in validate\n    graph = self._load_graph(filename, output_filename, report, contents, base_uri, prefixes)\n,  File \"/src/ogc/bblocks/validation/rdf.py\", line 163, in _load_graph\n    json_doc = self.uplifter.pre_uplift(report, json_doc)\n,  File \"/src/ogc/bblocks/validation/uplift.py\", line 40, in pre_uplift\n    return self._run_steps('pre', report, json_doc)\n,  File \"/src/ogc/bblocks/validation/uplift.py\", line 36, in _run_steps\n    input_data = getattr(self, func_name)(code, input_data, *args)\n,  File \"/src/ogc/bblocks/validation/uplift.py\", line 47, in _pre_jq\n    return jq.compile(code).input_value(json_doc).first()\n,  File \"jq.pyx\", line 322, in jq._ProgramWithInput.first\n,  File \"jq.pyx\", line 366, in jq._ResultIterator.__next__\n,ValueError: null (null) and number (66) cannot be multiplied\n"
             }
           ]
         }
@@ -485,11 +629,11 @@
             },
             {
               "op": "ttl-create",
-              "empty": false,
+              "empty": true,
               "filename": "example_6_1.ttl",
-              "size": 2,
-              "isError": false,
-              "message": "Output Turtle example_6_1.ttl created"
+              "size": 0,
+              "isError": true,
+              "message": "**Empty** output Turtle example_6_1.ttl created"
             }
           ]
         },
@@ -504,6 +648,24 @@
               "errorMessage": "'a' is a required property",
               "isError": true,
               "message": "ValidationError: 'a' is a required property\n\nFailed validating 'required' in schema:\n    {'$defs': {'test': {'type': 'string'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Schema for my building block',\n     'properties': {'a': {'format': 'uri',\n                          'type': 'string',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/a',\n                          'x-jsonld-type': '@id'},\n                    'b': {'type': 'number',\n                          'x-jsonld-id': 'https://example.org/my-bb-model/b'},\n                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test'},\n                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},\n     'required': ['a', 'b'],\n     'type': 'object'}\n\nOn instance:\n    {'@context': {'q': 'http://q.net/'}, 'dct:title': 'Juan', 'q:a': 'bcd'}"
+            }
+          ]
+        },
+        {
+          "name": "SEMANTIC_UPLIFT",
+          "title": "Semantic Uplift",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-construct transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift sparql-update transform step from inline code"
+            },
+            {
+              "isError": false,
+              "message": "Running post-uplift shacl transform step from uplift/test.shacl"
             }
           ]
         }

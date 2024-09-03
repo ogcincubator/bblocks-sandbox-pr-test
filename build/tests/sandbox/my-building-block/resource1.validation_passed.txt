@@ -1,5 +1,5 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-09-03T08:19:44.253331+00:00
+Generated 2024-09-03T08:44:26.621167+00:00
 === Files ===
 Using resource1.json from test resources
 JSON-LD context is present - uplifting
@@ -10,4 +10,12 @@ Output Turtle resource1.ttl created
 === JSON Schema ===
 Validation passed
 === End JSON Schema ===
+
+=== Semantic Uplift ===
+Running pre-uplift jq transform step from inline code
+Running pre-uplift jq transform step from inline code
+Running post-uplift sparql-construct transform step from inline code
+Running post-uplift sparql-update transform step from inline code
+Running post-uplift shacl transform step from uplift/test.shacl
+=== End Semantic Uplift ===
 
