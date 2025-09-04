@@ -73,10 +73,10 @@ console.log('Hello, world!')
 #### jsonld
 ```jsonld
 {
+  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/my-building-block/context.jsonld",
   "a": "http://www.google.es",
   "b": 198,
-  "d": "agreed",
-  "@context": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld"
+  "d": "agreed"
 }
 ```
 
@@ -147,9 +147,9 @@ properties:
     type: number
     x-jsonld-id: https://example.org/my-bb-model/b
   c:
-    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test
+    $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test
   d:
-    $ref: https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml
+    $ref: https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/enumerations/legalStatus/schema.yaml
 required:
 - a
 - b
@@ -158,8 +158,8 @@ required:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.json)
-* JSON version: [schema.json](https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml)
+* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/my-building-block/schema.json)
+* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/my-building-block/schema.yaml)
 
 
 # JSON-LD Context
@@ -178,7 +178,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/context.jsonld)
+[context.jsonld](https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/my-building-block/context.jsonld)
 
 ## Sources
 
@@ -188,6 +188,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/avillar/bblocks-sandbox](https://github.com/avillar/bblocks-sandbox)
+* URL: [https://github.com/ogcincubator/bblocks-sandbox-pr-test](https://github.com/ogcincubator/bblocks-sandbox-pr-test)
 * Path: `_sources/my-building-block`
 

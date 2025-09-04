@@ -3,22 +3,23 @@
 {
   "itemIdentifier": "avillar.sandbox.enumerations.legalStatus",
   "name": "Legal Status",
-  "abstract": "This Building Block serves as a template to create new ones",
+  "abstract": "Testing PR merging. Force another change",
   "status": "under-development",
   "dateTimeAddition": "2023-04-05T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2023-04-05",
-  "shaclRules": {},
+  "dateOfLastChange": "2025-09-04",
+  "shaclShapes": {},
   "schema": {
-    "application/yaml": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml",
-    "application/json": "https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.json"
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/enumerations/legalStatus/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/enumerations/legalStatus/schema.json"
   },
-  "sourceSchema": "https://avillar.github.io/bblocks-sandbox/_sources/enumerations/legalStatus/schema.yaml",
-  "sourceFiles": "https://avillar.github.io/bblocks-sandbox/_sources/enumerations/legalStatus/",
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/_sources/enumerations/legalStatus/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/_sources/enumerations/legalStatus/",
+  "rdfData": [],
   "validationPassed": true,
   "annotatedSchema": "type: string\nenum:\n- agreed\n- notAgreed\n",
-  "gitRepository": "https://github.com/avillar/bblocks-sandbox",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-sandbox-pr-test",
   "gitPath": "_sources/enumerations/legalStatus"
 }

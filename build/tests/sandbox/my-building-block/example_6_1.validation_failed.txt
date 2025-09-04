@@ -1,5 +1,5 @@
 Validation report for avillar.sandbox.my-building-block - My Building Block
-Generated 2024-09-03T08:44:27.446487+00:00
+Generated 2025-09-04T09:20:58.628836+00:00
 === Files ===
 Using example_6_1.jsonld from examples
 
@@ -22,8 +22,8 @@ Failed validating 'required' in schema:
                           'x-jsonld-type': '@id'},
                     'b': {'type': 'number',
                           'x-jsonld-id': 'https://example.org/my-bb-model/b'},
-                    'c': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test'},
-                    'd': {'$ref': 'https://avillar.github.io/bblocks-sandbox/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},
+                    'c': {'$ref': 'https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/my-building-block/schema.yaml#/$defs/test'},
+                    'd': {'$ref': 'https://raw.githubusercontent.com/ogcincubator/bblocks-sandbox-pr-test/undefined/build/annotated/sandbox/enumerations/legalStatus/schema.yaml'}},
      'required': ['a', 'b'],
      'type': 'object'}
 
